@@ -320,6 +320,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+;; evil偏好设置
+(setcdr evil-insert-state-map nil)
+(define-key evil-insert-state-map [escape] 'evil-normal-state)
+;
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -338,3 +342,6 @@ you should place your code here."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+;;子龙山人配置错误过时无法使用
+;;(setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
+;; (setq custom-file 'no-error 'no-message)
